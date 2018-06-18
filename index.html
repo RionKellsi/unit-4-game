@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <title>The Crystal Game </title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="assets/javascript/game.js"></script>
   <script src="https://code.jquery.com/jquery.js"></script>
-
 </head>
 
 <body>
@@ -18,96 +20,68 @@
     <!-- Jumbotron with Title -->
     <div class="jumbotron">
       <h1 class="text-center">
-        <strong>The Crystal Game</strong>
+        <strong>The Crystal Collector</strong>
       </h1>
       <hr>
-     
-
     </div>
+
     <div class="row">
 
       <div class="col-lg-6">
 
-        <!-- Controls (Superpower Grow/Shrink)-->
-        <div id="sizeControls" class="card">
+        <div id="crystals" class="card">
           <h4 class="card-header">Crystals</h4>
           <div class="card-body">
             <div class="text-center">
-              <button class="btn btn-dark btn-lg normal-button">
-                <span class="fa fa-ok"></span> Normal</button>
-              <button class="btn btn-primary btn-lg grow-button">
-                <span class="fa fa-plus"></span> Grow</button>
-              <button class="btn btn-danger btn-lg shrink-button">
-                <span class="fa fa-minus"></span> Shrink</button>
+              <button class="btn btn-sm green">
+                    <img src="assets/images/green.jpg" alt="Green"></button>
+              <button class="btn btn-sm blue">
+                    <img src="assets/images/blue.jpg" alt="Blue"></button>
+              <button class="btn btn-sm diamond">
+                    <img src="assets/images/diamond.jpg" alt="Blue"></button>
+                <button class="btn btn-sm purple">
+                    <img src="assets/images/purple.jpg" alt="Purple"></button>
             </div>
           </div>
         </div>
 
-        <!-- Controls (Superpower Visibility) -->
-        <div id="visibilityControls" class="card">
-          <h4 class="card-header">Superpowers - Invisiblity!</h4>
+       
+        <div id="Numbers" class="card">
+          <h4 class="card-header">Number</h4>
           <div class="card-body">
             <div class="text-center">
-              <button class="btn btn-dark btn-lg vis-button">
-                <span class="fa fa-eye"></span> Visible</button>
-              <button class="btn btn-info btn-lg invis-button">
-                <span class="fa fa-eye-slash"></span> Invisible</button>
+              <!-- where the number to solve goes -->
             </div>
           </div>
         </div>
 
-        <!-- Controls (Stretch) -->
-        <div id="stretchControls" class="card">
-          <h4 class="card-header">Superpowers - Stretch!</h4>
+        
+        <div id="Results" class="card">
+          <h4 class="card-header">Results</h4>
           <div class="card-body">
             <div class="text-center">
-              <button class="btn btn-dark btn-lg unstretch-btn">
-                <span class="fa fa-compress"></span> Normal</button>
-              <button class="btn btn-primary btn-lg stretch-btn">
-                <span class="fa fa-expand"></span> Stretch</button>
+              <!-- the results of the crystals -->
             </div>
           </div>
         </div>
 
-        <!-- Controls (Superpower Move Controls) -->
-        <div id="moveControls" class="card">
-          <h4 class="card-header">Move Controls</h4>
+        
+        <div id="winsAndLosses" class="card">
+          <h4 class="card-header">Wins & Losses</h4>
           <div class="card-body">
             <div class="text-center mb-1">
-              <button class="btn btn-dark btn-lg fa fa-arrow-up up-button">Up</button>
-            </div>
-            <div class="text-center">
-              <button class="btn btn-dark btn-lg fa fa-arrow-left left-button">Left</button>
-              <button class="btn btn-dark btn-lg fa fa-arrow-down down-button">Down</button>
-              <button class="btn btn-dark btn-lg fa fa-arrow-right right-button">Right</button>
-            </div>
-            <br>
-            <div class="text-center">
-              <button class="btn btn-dark btn-lg back-button">
-                <span class="fa fa-comment"></span> Go Planet!</button>
-             
+             <!-- Tally of Wins and Losses -->
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Right Panel -->
-      <div class="col-lg-6">
+        <!--Right Side Colum 
+            <div class="col-lg-6"> -->
 
-        
       </div>
     </div>
   </div>
-
-  <script>
-
-    // JavaScript function that wraps everything
-    $(document).ready(function () {
-
-
-
-
-  </script>
 
 </body>
 
