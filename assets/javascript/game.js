@@ -7,7 +7,6 @@ var randomNumber = Math.floor(Math.random()*120);
 $("#number").html(randomNumber);
 
 //Generate random number for each crystal 
-
 var gemOne= Math.floor(Math.random()*12+1);
 var gemTwo= Math.floor(Math.random()*12+1);
 var gemThree= Math.floor(Math.random()*12+1);
@@ -24,7 +23,7 @@ $("#losses").text(losses);
 
 //reset the game 
 function reset(){
-    randomNumber=Math.floor(Math.random()*120);
+    randomNumber= Math.floor(Math.random()*120);
     console.log(randomNumber)
     $("#number").html(randomNumber);
     gemOne= Math.floor(Math.random()*12+1);
