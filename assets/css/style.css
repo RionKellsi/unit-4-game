@@ -3,6 +3,6 @@ img {
     width: 100px;
 }
 
-#crystals {
-    background: pink; 
+.container {
+    background: #ff66d9; 
 }
