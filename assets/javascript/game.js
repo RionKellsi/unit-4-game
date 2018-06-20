@@ -12,7 +12,7 @@ var gemTwo= Math.floor(Math.random()*12+1);
 var gemThree= Math.floor(Math.random()*12+1);
 var gemFour= Math.floor(Math.random()*12+1);
 
-// Create variables to track wins and losses 
+// Create variables to track player total, wins, and losses 
 var playerTotal= 0;
 var wins= 0;
 var losses= 0;
@@ -21,7 +21,7 @@ var losses= 0;
 $("#wins").text(wins);
 $("#losses").text(losses);
 
-//reset the game 
+//create a function to reset the game 
 function reset(){
     randomNumber= Math.floor(Math.random()*120);
     console.log(randomNumber)
@@ -34,7 +34,7 @@ function reset(){
     $("#totalScore").html(playerTotal);
 };
 
-//Wins
+//function for Wins
 
 function yaay(){
     alert("You Won!");
@@ -43,7 +43,7 @@ function yaay(){
     reset();
 }
 
-//Losses
+//function for Losses
 function booo(){
     alert("You Lost!")
     losses++;
