@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 //Generate random number to be guessed 
-var randomNumber = Math.floor(Math.random()*120+19);
+var randomNumber = Math.floor(Math.random()*101+19);
 
 // Display random Number in the HTML
 $("#number").html(randomNumber);
